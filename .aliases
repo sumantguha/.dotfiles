@@ -1,0 +1,19 @@
+alias python="/usr/local/bin/python3"
+alias lc='colorls'
+
+grade() {
+	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://gradeit.cs.washington.edu/uwcse/admin/section_view.php?course=142&quarter=20sp&assignment=a$1&section=BG"
+	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://cubist.cs.washington.edu/cse143-admin/index.php/142_Assignment_$1_20_sp"
+	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://docs.google.com/document/d/1dCT9Aepxwfq4HOCIv4YuZ7N9WezGiIHKdD2s5OehdRM/edit"
+	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://groups.google.com/forum/#!forum/142-20sp-grading-message-board"
+}
+
+attu() {
+	ssh guhas2@attu"$1".cs.washington.edu
+}
+
+st() {
+	echo "will sleep in $1 minutes."
+	sleep $(($1 * 60))
+	pmset sleepnow
+}
