@@ -1,11 +1,14 @@
 alias python="/usr/local/bin/python3"
-alias lc='colorls'
+alias ls='colorls'
+[ -h '/usr/local/bin/vim' ] && alias vim='/usr/local/bin/vim'
 
 grade() {
-	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://gradeit.cs.washington.edu/uwcse/admin/section_view.php?course=142&quarter=20sp&assignment=a$1&section=BG"
-	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://cubist.cs.washington.edu/cse143-admin/index.php/142_Assignment_$1_20_sp"
-	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://docs.google.com/document/d/1dCT9Aepxwfq4HOCIv4YuZ7N9WezGiIHKdD2s5OehdRM/edit"
-	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://groups.google.com/forum/#!forum/142-20sp-grading-message-board"
+	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://us.edstem.org/courses/2542/assessments/7710/submissions"
+	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://cubist.cs.washington.edu/cse143-admin/index.php/142_Assignment_$1_20_au"	
+	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://docs.google.com/document/d/1h8_mLS8oBmL3OyUqbBqkJiICl9P0vU-_QKvmlGQbHU0/edit#"
+	/usr/bin/open -a "/Applications/Google Chrome.app/" "https://us.edstem.org/courses/2740/discussion/"
+	spotify play uri spotify:playlist:3zfbfmKd1j3Q7kYGTgX3OX
+	/usr/bin/open -a "https://mattermost.cs.washington.edu/cse142-20au/channels/grading-tas"
 }
 
 attu() {
@@ -17,3 +20,5 @@ st() {
 	sleep $(($1 * 60))
 	pmset sleepnow
 }
+
+
